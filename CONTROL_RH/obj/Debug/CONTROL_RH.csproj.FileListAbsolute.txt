@@ -1,0 +1,7 @@
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\obj\Debug\CONTROL_RH.csproj.AssemblyReference.cache
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\obj\Debug\CONTROL_RH.csproj.CoreCompileInputs.cache
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\bin\Debug\CONTROL_RH.exe.config
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\bin\Debug\CONTROL_RH.exe
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\bin\Debug\CONTROL_RH.pdb
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\obj\Debug\CONTROL_RH.exe
+C:\Users\epica\source\repos\CONTROL_RH\CONTROL_RH\obj\Debug\CONTROL_RH.pdb
