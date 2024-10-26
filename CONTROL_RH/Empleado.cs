@@ -11,7 +11,7 @@ namespace CONTROL_RH
 {
     public static class Empleado
     {
-        static int n = 3;
+        static int n = 10;
         public static int[] id = new int[n];
         public static string[] cedula = new string[n];
         public static string[] nombre = new string[n];
