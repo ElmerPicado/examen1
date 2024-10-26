@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -10,21 +11,23 @@ namespace CONTROL_RH
 {
     public static class Empleado
     {
-        public static int    [] id = new int [10];
-        public static string [] cedula = new string[10];
-        public static string [] nombre = new string[10];
-        public static string [] direccion = new string[10]; 
-        public static string [] telefono = new string[10];
-        public static float [] salario = new float[10];
+        static int n = 3;
+        public static int[] id = new int[n];
+        public static string[] cedula = new string[n];
+        public static string[] nombre = new string[n];
+        public static string[] direccion = new string[n];
+        public static string[] telefono = new string[n];
+        public static float[] salario = new float[n];
 
         public static void listaNombres()
         
         {
-            for (int i = 1; i <= id.Length; i++) 
+            Console.Clear();
+            for (int i = 0; i < id.Length; i++) 
             
             {
                 Console.WriteLine($"nombre : {Empleado.nombre[i]}");
-
+                
 
             }
         
@@ -154,12 +157,12 @@ namespace CONTROL_RH
         {
             char sino = ' ';
             Console.Clear();
-            Console.Write("Digite el codigo del articulo:");
-            int Code = int.Parse(Console.ReadLine());
+            Console.Write("Digite el nombre del empleado:");
+           string Code = Console.ReadLine();
 
             for (int i = 0; i < Empleado.id.Length; i++)
             {
-                if (Empleado.id[i] == Code)
+                if (Empleado.nombre[i] == Code)
                 {
                     Console.Clear();
                     Console.Write("*****Datos del  articulo:****\n");
@@ -198,24 +201,29 @@ namespace CONTROL_RH
 
         {
             int op = 0;
-
+            Console.Clear();
             do
             {
                 Console.WriteLine("** subMenu reporte empleados **\n");
                 Console.WriteLine("1- Listar todos los empleados");
                 Console.WriteLine("2- Calcular promedio salarios");
-                op = Console.Read();
+                Console.WriteLine("3- Volver a Menu principal");
+                
+                op =int.Parse (Console.ReadLine());
                 switch (op)
 
                 {
                     case 1:
                         listaNombres(); break;
 
-                        case 2:
+                    case 2:
                         calculo(); break;
-
+                   default: break;
 
                     
+
+
+
 
 
 
@@ -223,7 +231,7 @@ namespace CONTROL_RH
 
 
 
-            } while (false);
+            } while (op!=3);
 
 
 

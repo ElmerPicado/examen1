@@ -21,9 +21,10 @@ namespace CONTROL_RH
         public static  void principalmenu() { 
             
         int opcion = 0;
-
+            
             do
             {
+                Console.Clear();
                 Console.WriteLine("**Menu principal RH **\n");
                 Console.WriteLine("1- Agrgar empleados");
                 Console.WriteLine("2- Consultar Empleados");
